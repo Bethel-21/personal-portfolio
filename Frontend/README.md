@@ -1,4 +1,4 @@
-# AI-Inspired Minimalist Portfolio
+                   Minimalist Portfolio
 
 A production-ready, minimalist portfolio application built for Backend Engineers and AI Enthusiasts. Designed with a focus on elegance, clean typography, and professional aesthetics similar to OpenAI, Vercel, and Linear.
 
@@ -43,22 +43,3 @@ A production-ready, minimalist portfolio application built for Backend Engineers
    bun build
    ```
 
-## Folder Structure
-
-- `src/components`: Reusable UI components and layout elements.
-- `src/sections`: Main page sections.
-- `src/data`: Centralized portfolio content for easy editing.
-- `src/hooks`: Custom hooks for theme and interactions.
-- `src/types`: TypeScript interfaces for data structures.
-
-## Customization
-
-To update the portfolio content, simply edit `src/data/portfolio.ts`. The design theme can be adjusted in `src/index.css`.
-
-## Backend Integration
-
-The contact form in `src/sections/contact.tsx` is currently frontend-only. It includes placeholders and comments for connecting to a Django or any other backend API.
-
-## License
-
-MIT
