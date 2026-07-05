@@ -10,20 +10,33 @@ import { Contact } from './sections/contact';
 import { ThemeProvider } from './hooks/use-theme';
 import { Toaster } from './components/ui/sonner';
 
+import { Routes, Route } from "react-router-dom";
+import { BlogDetail } from "@/sections/blog-detail";
+
+function HomePage() {
+  return (
+    <Layout>
+      <Hero />
+      <About />
+      <Skills />
+      <Projects />
+      <Experience />
+      <Certifications />
+      <BlogPreview />
+      <Contact />
+    </Layout>
+  );
+}
+
 function App() {
   return (
     <ThemeProvider>
-      <Layout>
-        <Hero />
-        <About />
-        <Skills />
-        <Projects />
-        <Experience />
-        <Certifications />
-        <BlogPreview />
-        <Contact />
-      </Layout>
-      <Toaster position="bottom-right" />
+      <Toaster />
+
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/blog/:id" element={<BlogDetail />} />
+      </Routes>
     </ThemeProvider>
   );
 }
