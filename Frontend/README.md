@@ -1,45 +1,131 @@
-                   Minimalist Portfolio
+# Bethelhem Daniel – Personal Portfolio
 
-A production-ready, minimalist portfolio application built for Backend Engineers and AI Enthusiasts. Designed with a focus on elegance, clean typography, and professional aesthetics similar to OpenAI, Vercel, and Linear.
+A modern, full-stack portfolio built to showcase my work as a Backend Engineer and AI enthusiast. The project combines a React frontend with a Django REST API backend, featuring a dynamic blog, contact form, and responsive user experience.
 
 ## Features
 
-- **React 19 & Vite**: Ultra-fast development and optimized production builds.
-- **TypeScript**: Type-safety throughout the application.
-- **Tailwind CSS 4**: Modern styling with native CSS variables and glassmorphism.
-- **Framer Motion**: Smooth entrance animations and micro-interactions.
-- **Dark/Light Mode**: Seamless theme switching with system preference detection.
-- **Responsive Design**: Fully optimized for mobile, tablet, and desktop.
-- **9 Core Sections**: Hero, About, Skills, Projects, Experience, Certifications, Blog, Contact, and Footer.
-- **Professional Form**: Frontend contact form with validation and comments for backend integration.
+* Modern React + Vite frontend
+* Django REST Framework backend
+* Dynamic blog powered by a REST API
+* Contact form with messages stored in the Django admin dashboard
+* Responsive design for desktop, tablet, and mobile
+* Dark and light mode support
+* Smooth animations with Framer Motion
+* TypeScript for improved maintainability
+* Tailwind CSS for clean, modern styling
+
+## Tech Stack
+
+### Frontend
+
+* React
+* TypeScript
+* Vite
+* Tailwind CSS
+* Framer Motion
+* React Router DOM
+* Lucide React
+
+### Backend
+
+* Django
+* Django REST Framework
+* SQLite (development)
+
+## Project Structure
+
+```text
+personal-portfolio/
+├── Frontend/
+│   ├── src/
+│   ├── public/
+│   └── package.json
+│
+├── Backend/
+│   ├── blog/
+│   ├── contact/
+│   ├── core/
+│   ├── manage.py
+│   └── requirements.txt
+│
+└── README.md
+```
 
 ## Getting Started
 
 ### Prerequisites
 
-- [Node.js](https://nodejs.org/) (v18 or higher)
-- [npm](https://www.npmjs.com/) or [bun](https://bun.sh/)
+* Node.js 18+
+* Python 3.12+ (or compatible version)
+* pip
+* Git
 
-### Installation
+### Clone the Repository
 
-1. Install dependencies:
-   ```bash
-   npm install
-   # or
-   bun install
-   ```
+```bash
+git clone <repository-url>
+cd personal-portfolio
+```
 
-2. Start the development server:
-   ```bash
-   npm run dev
-   # or
-   bun dev
-   ```
+## Frontend Setup
 
-3. Build for production:
-   ```bash
-   npm run build
-   # or
-   bun build
-   ```
+```bash
+cd Frontend
+npm install
+npm run dev
+```
 
+To build for production:
+
+```bash
+npm run build
+```
+
+## Backend Setup
+
+```bash
+cd Backend
+
+python -m venv venv
+
+# Activate the virtual environment
+
+# Linux/macOS
+source venv/bin/activate
+
+# Windows
+venv\Scripts\activate
+
+pip install -r requirements.txt
+
+python manage.py migrate
+
+python manage.py runserver
+```
+
+## Backend Features
+
+### Contact API
+
+Visitors can submit messages through the contact form. Messages are stored in the Django admin panel for easy management.
+
+### Blog API
+
+Blog posts are managed through Django Admin and served dynamically to the React frontend using Django REST Framework.
+
+## Future Improvements
+
+* Image uploads for blog posts
+* Rich text/Markdown editor
+* Blog search and categories
+* PostgreSQL for production
+* User authentication for admin features
+* Email notifications for contact submissions
+
+## About
+
+This portfolio reflects my journey from frontend development to backend engineering while documenting projects, technical learning, and experiments in AI. It is designed to evolve as I continue building software and sharing what I learn.
+
+## License
+
+This project is open source and available under the MIT License.

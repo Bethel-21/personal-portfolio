@@ -38,7 +38,7 @@ export function Header() {
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <a href="#hero" className="text-xl font-bold tracking-tight">
-          AR<span className="text-primary">.</span>
+          B.D.F<span className="text-primary">.</span>
         </a>
 
         {/* Desktop Nav */}
