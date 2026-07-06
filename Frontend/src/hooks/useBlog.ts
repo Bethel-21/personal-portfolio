@@ -16,7 +16,7 @@ export const useBlog = () => {
   useEffect(() => {
     const fetchBlog = async () => {
       try {
-        const res = await fetch("http://127.0.0.1:8000/api/blog/");
+        const res = await fetch("https://personal-portfolio-5jb6.onrender.com/api/blog/");
         const data = await res.json();
         setPosts(data);
       } catch (error) {
