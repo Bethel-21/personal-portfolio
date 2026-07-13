@@ -9,7 +9,7 @@ export const personalInfo = {
   email: "bethelhemdanielfenta@gmail.com",
   github: "https://github.com/Bethel-21",
   linkedin: "https://www.linkedin.com/in/bet-daniel2000/",
-  resumeUrl: "https://drive.google.com/file/d/1B3ylTThG122lA8bUnSEP-dysB0ytKXv1/view?usp=sharing",
+  resumeUrl: "https://drive.google.com/file/d/1e8dMuRYtNRTPEefMsWqU3rjwS8aabQ2F/view?usp=sharing",
 };
 
 export const skillCategories: SkillCategory[] = [
